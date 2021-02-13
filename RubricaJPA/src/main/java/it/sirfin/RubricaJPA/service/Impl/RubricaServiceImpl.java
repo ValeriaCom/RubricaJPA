@@ -5,11 +5,20 @@
  */
 package it.sirfin.RubricaJPA.service.Impl;
 
+import it.sirfin.RubricaJPA.repository.RubricaRepository;
+import it.sirfin.RubricaJPA.service.RubricaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author marco
  */
-public class RubricaServiceImpl {
+@Service
+public class RubricaServiceImpl implements RubricaService {
+    
+      @Autowired
+    RubricaRepository rubricaRepository;
    
     
 }

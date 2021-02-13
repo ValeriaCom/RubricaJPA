@@ -5,10 +5,13 @@
  */
 package it.sirfin.RubricaJPA.repository;
 
+import it.sirfin.RubricaJPA.model.RubricaJPA;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
  * @author marco
  */
-public class RubricaRepository {
+public interface RubricaRepository extends JpaRepository<RubricaJPA, Long> {
     
 }
