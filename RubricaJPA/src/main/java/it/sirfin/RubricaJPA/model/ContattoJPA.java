@@ -39,8 +39,6 @@ public class ContattoJPA implements Serializable {
         this.telefono = telefono;
     }
 
-    
-
     public Long getId() {
         return id;
     }
@@ -77,7 +75,5 @@ public class ContattoJPA implements Serializable {
     public String toString() {
         return "RubricaJPA{" + "id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", telefono=" + telefono + '}';
     }
-    
-    
 
 }

@@ -5,7 +5,6 @@
  */
 package it.sirfin.RubricaJPA.service;
 
-
 import it.sirfin.RubricaJPA.model.ContattoJPA;
 import java.util.List;
 
@@ -14,8 +13,12 @@ import java.util.List;
  * @author marco
  */
 public interface RubricaService {
+
     void inserisciContatto(ContattoJPA c);
+
     void cancellaContatto(ContattoJPA p);
+
     void svuotaRubrica();
+
     List<ContattoJPA> recuperaContatti();
 }

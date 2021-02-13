@@ -33,15 +33,15 @@ public class RubricaControllerJPA {
         contatto.add(new ContattoJPA("Alessandro", "Urbani", "3913283951"));
         contatto.add(new ContattoJPA("Marco", "Bonaccorso", "3282365019"));
         contatto.add(new ContattoJPA("Valeria", "Comitogianni", "3922147475"));
-        
-        
+
         // svuota la rubrica
-         rubricaService.svuotaRubrica();
-         
-         //recupera i contatti appena cancellati
-        contatto.forEach((t) -> { rubricaService.inserisciContatto(t);
+        rubricaService.svuotaRubrica();
+
+        //recupera i contatti appena cancellati
+        contatto.forEach((t) -> {
+            rubricaService.inserisciContatto(t);
         });
-         List<ContattoJPA> lista = rubricaService.recuperaContatti();
-         lista.forEach((t) -> System.out.println(t));
+        List<ContattoJPA> lista = rubricaService.recuperaContatti();
+        lista.forEach((t) -> System.out.println(t));
     }
 }

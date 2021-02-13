@@ -13,5 +13,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author marco
  */
 public interface RubricaRepository extends JpaRepository<ContattoJPA, Long> {
-    
+
 }
