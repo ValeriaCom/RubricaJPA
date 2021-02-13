@@ -17,7 +17,7 @@ import javax.persistence.Id;
  * @author marco
  */
 @Entity
-public class ContattoJPA implements Serializable {
+public class RubricaJPA implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,16 +30,15 @@ public class ContattoJPA implements Serializable {
     @Column
     private String telefono;
 
-    public ContattoJPA() {
+    public RubricaJPA() {
     }
 
-    public ContattoJPA(String nome, String cognome, String telefono) {
+    public RubricaJPA(Long id, String nome, String cognome, String telefono) {
+        this.id = id;
         this.nome = nome;
         this.cognome = cognome;
         this.telefono = telefono;
     }
-
-    
 
     public Long getId() {
         return id;
